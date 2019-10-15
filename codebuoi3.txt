@@ -1,0 +1,66 @@
+//
+//  main.swift
+//  Hocbuoi3
+//
+//  Created by macshop on 10/15/19.
+//  Copyright © 2019 macshop. All rights reserved.
+//
+
+import Foundation
+
+print("Hello, World!")
+
+// khai báo mảng
+var names : [String] = ["Hoa", "Nam", "Phong"] // đây là cách khai báo đầy đủ
+
+// duyệt mảng
+
+for i in names{
+    print(i)
+}
+print("--------")
+
+ // quyệt mảng kèm theo index
+for (index, i) in names.enumerated() {
+    print("\(index)-\(i)")
+}
+print("cố mà hiểu em ạ")
+
+ // một cách khác duyệt mảng lấy ra index
+for i in 0..<names.count{
+    print("\(index)-\(i)")
+}
+
+print("chỗ này tao ra (function - 0, 1, 2)")
+ // in ra số phân tử thứ bao nhiêu của mảng
+print(names[0]) // index phải nhoe hơn số phần tử của mảng đó
+
+// thêm phần tử vào mảng
+
+names.append("chung")
+print("names")
+
+// append chuyền vào một phần tử
+names.append(contentsOf: ["An", "Hạnh", "Duong"])
+
+// append chuyền vào một mảng
+ print(names)//in mảng đó ra khi thêm phần tử vào mảng
+
+// thay thế giá trị phần tử trong mảng
+names[2] = "Long"
+print(names)
+
+// xoá phần tử trong mảng
+// - xoá phần tử trong index
+names.remove(at: 2)
+print(names)
+ // - xoá tất cả các phần tử
+names.removeAll()
+print(names)
+// - xoá phần tử đầu tiên
+names.removeFirst()
+print(names)
+// - xoá phần tư cuối cùng
+names.removeLast()
+print(names)
+
